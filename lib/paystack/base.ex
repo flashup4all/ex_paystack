@@ -6,8 +6,8 @@ defmodule PaystackBase do
 
 
   @base_url "https://api.paystack.co"
-  # @paystack_token "sk_live_6bbd7859c4f2af2fcd05c1d1bd0376be66d8e727"
-  @paystack_secret_key System.get_env("PAYSTACK_SECRET_KEY")#"sk_test_fd14a7bf797418b335272c2bd9807d135eefac90"
+
+  @paystack_secret_key System.get_env("PAYSTACK_SECRET_KEY")
 
   @headers ["Accept": "Application/json", "Cache-Control": "no-cache", "Authorization": "Bearer #{@paystack_secret_key}"]
   @options [ssl: [{:versions, [:'tlsv1.2']}]]
