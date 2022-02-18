@@ -1,6 +1,6 @@
 # ExPaystack
 
-**TODO: Add description**
+**An Elixir Package for integrating and working with Paystack seamlessly**
 
 ## Installation
 
