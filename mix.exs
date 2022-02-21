@@ -11,8 +11,7 @@ defmodule ExPaystack.MixProject do
       start_permanent: Mix.env() == :prod,
       source_url: @project_url,
       homepage_url: @project_url,
-      description:
-      "Elixir Paystack library ",
+      description: "Elixir Paystack library ",
       deps: deps()
     ]
   end
