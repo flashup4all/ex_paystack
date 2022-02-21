@@ -3,6 +3,7 @@ defmodule ExPaystackTest do
   doctest ExPaystack
 
   test "greets the world" do
-    assert ExPaystack.hello() == :world
+    assert {:ok, response} = ExPaystack.generate_payment_link()
+    assert response.status_code == 200
   end
 end
