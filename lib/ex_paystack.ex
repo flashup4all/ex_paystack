@@ -3,6 +3,10 @@ defmodule ExPaystack do
 
   @moduledoc """
   Documentation for `ExPaystack`.
+
+  Setup
+
+  mix.exs
   """
 
   @doc """

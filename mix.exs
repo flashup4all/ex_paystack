@@ -6,17 +6,17 @@ defmodule ExPaystack.MixProject do
   def project do
     [
       app: :ex_paystack,
-      version: "0.1.0",
+      version: "0.0.1",
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       source_url: @project_url,
       homepage_url: @project_url,
-      description: description,
+      description: description(),
       deps: deps(),
       aliases: aliases(),
-      package: package,
+      package: package(),
       dialyzer: [
         plt_file: {:no_warn, "priv/plts/dialyzer.plt"},
         ignore_warnings: ".dialyzer_ignore.exs"
@@ -78,7 +78,7 @@ defmodule ExPaystack.MixProject do
 
   defp package do
     [
-      files: ["lib", "mix.exs", "README*", "LICENSE*"],
+      files: ["lib", "mix.exs", "README*"],
       maintainers: ["Bardeson Lucky"],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/flashup4all/ex_paystack"}

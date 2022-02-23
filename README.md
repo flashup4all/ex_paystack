@@ -15,6 +15,11 @@ def deps do
 end
 ```
 
+config.exs
+``` elixir
+  config :ex_paystack,
+  secret_key: "PAYSTACK_SECRET_KEY"
+```
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/ex_paystack](https://hexdocs.pm/ex_paystack).
