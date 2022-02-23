@@ -1,5 +1,4 @@
 use Mix.Config
 
-if File.exists?("config/config.secret.exs") do
-  import_config "config.secret.exs"
-end
+config :ex_paystack,
+  secret_key: System.get_env("PAYSTACK_SECRET_KEY")

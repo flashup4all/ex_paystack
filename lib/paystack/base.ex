@@ -4,7 +4,7 @@ defmodule PaystackBase do
 
   @base_url "https://api.paystack.co"
 
-  @paystack_secret_key System.get_env("PAYSTACK_SECRET_KEY")
+  @paystack_secret_key Application.fetch_env!(:ex_paystack, :secret_key)
 
   @headers [
     Accept: "Application/json",
